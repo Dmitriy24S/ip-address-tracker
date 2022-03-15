@@ -233,3 +233,42 @@ form button {
     transform: translateX(0);
   }
 }
+
+/* desktop */
+@media (min-width: 868px) {
+  /* zoom btns location desktop */
+  .leaflet-top .leaflet-control {
+    margin-top: 183px;
+  }
+  /* main desktop */
+  .data-container {
+    padding: 1.5rem 0;
+    text-align: left;
+    flex-direction: row;
+    width: auto;
+    max-width: 63rem;
+    min-width: 50rem;
+    gap: 0;
+  }
+  .text-container + .text-container {
+    border-left: 1px solid hsla(0, 0%, 70%, 0.507);
+  }
+  .text-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: 25%;
+  }
+}
+
+/* hover */
+@media (hover) {
+  form button:hover {
+    background-color: rgb(68, 68, 68);
+  }
+  .example-btn-menu-toggle:hover {
+    color: rgba(0, 0, 0, 0.651);
+  }
+  .example-btn:hover {
+    opacity: 0.8;
+  }
+}
