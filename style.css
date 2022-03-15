@@ -76,9 +76,9 @@ form {
   justify-content: space-between;
   position: relative;
   margin-top: 1rem;
-  width: 40%;
+  width: calc(100% - 2rem);
   min-width: 16rem;
-  max-width: 30rem;
+  max-width: 27rem;
   background: white;
   border-radius: 13px;
 }
@@ -132,7 +132,6 @@ form button {
   padding: 1.5rem 1rem;
   margin: 0 auto;
   margin-top: 1.5rem;
-  width: 40%;
   min-width: 18rem;
   max-width: 27rem;
 }
@@ -215,7 +214,7 @@ form button {
 }
 
 /* L+ screen size map zoom btns location change */
-@media (min-width: 400px) {
+@media (min-width: 584px) {
   /* zoom btns location */
   .leaflet-top .leaflet-control {
     margin-top: 121px;
