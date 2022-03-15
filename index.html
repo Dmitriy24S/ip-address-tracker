@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- script -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+    <title>IP Address Tracker</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="" class="logo">
+        <h2>IP Address Tracker</h2>
+      </a>
+      <form>
+        <label for="ip-input">
+          <input
+            type="text"
+            pattern="^(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$"
+            minlength="7"
+            maxlength="15"
+            id="ip-input"
+            placeholder="Search for any IP address or domain
+  "
+            autocomplete="off"
+          />
+        </label>
+        <button type="submit">
+          <span class="sr-only">Submit</span>
+          <img src="images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <div class="data-container">
+        <div class="text-container">
+          <h3 class="title">IP Address</h3>
+          <p class="info ip-data">161.23.222.255</p>
+        </div>
+        <div class="text-container">
+          <h3 class="title">Location</h3>
+          <p class="info location-data">Roman Southwark, London E2 0AG</p>
+        </div>
+        <div class="text-container">
+          <h3 class="title">Timezone</h3>
+          <p class="info time-data">UTC 0:00</p>
+        </div>
+        <div class="text-container">
+          <h3 class="title">ISP</h3>
+          <p class="info isp-data">QMW-AC-UK</p>
+        </div>
+      </div>
+
+      <!-- example btn -->
+      <button class="example-btn-menu-toggle">
+        <span class="sr-only">Open Menu</span>
+        &lt;
+      </button>
+      <div class="example">
+        <button class="example-btn">Use another example IP</button>
+      </div>
+
+      <!-- MAP -->
+      <div class="map-container" id="map"></div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Dmitriy</a>
+      </div>
+    </footer>
+  </body>
+</html>
